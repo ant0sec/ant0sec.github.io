@@ -3,7 +3,7 @@ layout: post
 title: CyberWave DevOops Write-Up
 date: 2024-11-09
 categories: [Write-Ups, CyberWave, Machine, Easy]
-tags: [devoops, Credential-Leak, CMS, WordPress, SimpleJobBoard, CVE-2020-35749, LFI, Docker-Breakout, easy, linux ]
+tags: [devoops, Credential-Leak, CMS, WordPress, SimpleJobBoard, CVE-2020-35749, LFI, Docker-Breakout, Easy, Linux ]
 ---
 ![Devoops Logo](/assets/post_details/devoops/devoops_logo.png)
 # Cyber Wave: DevOops Write-Up
