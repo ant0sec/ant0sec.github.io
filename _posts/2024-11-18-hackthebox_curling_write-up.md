@@ -7,7 +7,7 @@ tags: [curl, cyberchef, joomla!, rce, pspy, cron, eJPT, IntroToDante, Easy, Web]
 ---
 ![Curling Logo](/assets/post_details/curling/curling_logo.png)
 # Hack The Box: Curling Write-Up
-La **maquina easy** [Curling](https://app.hackthebox.com/machines/160) de [Hack The Box](https://app.hackthebox.com/) 
+La **maquina easy** [Curling](https://app.hackthebox.com/machines/160) de [Hack The Box](https://app.hackthebox.com/) trata de una explotación al **CMS Joomla!** mediante una enumeración previa consiguiendo acceso y realizando un **RCE**. La escalada de privilegios consta de tareas **CRON** con la herramienta **PSPY**.
 
 ## Enumeration
 Realizamos la enumeración de puertos y de servicios en los que encontramos abiertos los puertos:

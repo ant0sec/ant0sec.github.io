@@ -7,7 +7,7 @@ tags: [smb, Reporting Service, telnet, cme, RU Scanner, DataStream, Decrypt, eJP
 ---
 ![Nest Logo](/assets/post_details/nest/nest_logo.png)
 # Hack The Box: Nest Write-Up
-La **maquina easy** [Nest](https://app.hackthebox.com/machines/225) de [Hack The Box](https://app.hackthebox.com/) 
+La **maquina easy** [Nest](https://app.hackthebox.com/machines/225) de [Hack The Box](https://app.hackthebox.com/) trata de una explotación a traves de la enumeración del puerto 445 - SMB, con la que deberemos de realizar scripts de desencriptación hasta tomar acceso al sistema mediante un servicio desconocido.
 
 ## Enumeration
 Realizamos la enumeración de puertos y de servicios con **nmap** a la maquina **Nest**, encontramos:
