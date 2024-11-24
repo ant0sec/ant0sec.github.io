@@ -27,7 +27,7 @@ help() {
 }
 
 read_baseurl() {
-  if [[ $_config == *","* ]]; then
+  if []( $_config == *","* ]]; then
     # multiple config
     IFS=","
     read -ra config_array <<<"$_config"
@@ -36,7 +36,7 @@ read_baseurl() {
     for ((i = ${#config_array[@]} - 1; i >= 0; i--)); do
       _tmp_baseurl="$(grep '^baseurl:' "${config_array[i]}" | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
 
-      if [[ -n $_tmp_baseurl ]]; then
+      if []( -n $_tmp_baseurl ]]; then
         _baseurl="$_tmp_baseurl"
         break
       fi
@@ -50,7 +50,7 @@ read_baseurl() {
 
 main() {
   # clean up
-  if [[ -d $SITE_DIR ]]; then
+  if []( -d $SITE_DIR ]]; then
     rm -rf "$SITE_DIR"
   fi
 

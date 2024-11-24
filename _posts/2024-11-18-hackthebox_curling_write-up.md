@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Hack The Box Curling Write-Up
-date: 2024-11-17
+date: 2024-11-18
 categories: [Write-Ups, HackTheBox, Machine, Easy]
-tags: [eJPT, IntroToDante, Easy, Web]
+tags: [curl, cyberchef, joomla!, rce, pspy, cron, eJPT, IntroToDante, Easy, Web]
 ---
-![Curling Logo](/assets/post_details)
+![Curling Logo](/assets/post_details/curling/curling_logo.png)
 # Hack The Box: Curling Write-Up
 La **maquina easy** [Curling](https://app.hackthebox.com/machines/160) de [Hack The Box](https://app.hackthebox.com/) 
 
@@ -69,7 +69,7 @@ En este caso el archivo binario, contiene un archivo en txt llamado **password.t
 Esta credencial nos sirve para escalar privilegio al usuario **floris**.
 ![Get User](/assets/post_details/curling/curling_get_user.png)
 ### floris -> get_flag
-Utilizamos **pspy** para la enumeración de tareas cron en el sistema, para esto nos descargamos la herramienta **pspy64**, y la transferimos con la herramienta **scp**, comunicación a traves del protocolo **ssh**.
+Utilizamos [pspy](https://github.com/DominicBreuker/pspy) para la enumeración de tareas cron en el sistema, para esto nos descargamos la herramienta **pspy64**, y la transferimos con la herramienta **scp**, comunicación a traves del protocolo **ssh**.
 ```bash
 mv /home/ant0/Downloads/pspy64 .
 chmod +x pspy64
