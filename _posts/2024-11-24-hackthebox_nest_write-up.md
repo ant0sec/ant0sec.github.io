@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hack The Box Curling Write-Up
+title: Hack The Box Nest Write-Up
 date: 2024-11-24
 categories: [Write-Ups, HackTheBox, Machine, Easy]
 tags: [smb, Reporting Service, telnet, cme, RU Scanner, DataStream, Decrypt, eJPT, IntroToDante, Easy, Web]
