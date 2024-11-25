@@ -63,7 +63,7 @@ cat users.txt | awk -F '[' '{print $2}' | awk -F ']' '{print $1}'
 Realizamos un ataque de **Password Spraying** con el que no obtenemos **Password Reuse** de otros usuarios, aunque si validamos el usuario anteriormente obtenido.
 ![CME PS](/assets/post_details/active/active_cme_password_spraying.png)
 ### AS-REP ROASTING ATTACK
-En este caso probamos un ataque [](AS-REP ROASTING), la herramienta **impacket-GetNPUsers** busca usuarios los cuales tienen la opcion **UF_DONT_REQUIRE_PREAUTH**, estos no requieren de una preautenticacion, por lo que tendriamos la posiblidad de obtener los hashes de los usuarios, aunque no en este caso.
+En este caso probamos un ataque **AS-REP ROASTING**, la herramienta **impacket-GetNPUsers** busca usuarios los cuales tienen la opcion **UF_DONT_REQUIRE_PREAUTH**, estos no requieren de una preautenticacion, por lo que tendriamos la posiblidad de obtener los hashes de los usuarios, aunque no en este caso.
 ```bash
 impacket-GetNPUsers -no-pass -usersfile user.txt active.htb/
 ```
@@ -83,7 +83,7 @@ Validacion de la contraseña valida.
 Podemos encontrar hashes de usuarios o contraseñas de usuarios antiguos.
 ![CME Get LSA](/assets/post_details/active/active_cme_get_lsa.png)
 ### Dumping NTDS
-Dumpeamos los hashes de los usuarios los cuales nos pueden servir para realizar [](PASS THE HASH). 
+Dumpeamos los hashes de los usuarios los cuales nos pueden servir para realizar **PASS THE HASH**. 
 ![CME Get NTDS](/assets/post_details/active/active_cme_get_ntds.png)
 
 ### Lateral Movement
@@ -93,6 +93,6 @@ impacket-psexec active.htb /Administrator:Ticketmaster1968@10.10.10.100 cmd.exe
 ```
 ![PSEXEC attack](/assets/post_details/active/active_psexec_attack.png)
 #### PASS-THE-HASH
-Validamos que tenemos acceso con el **hash** del usuario **Administrator** y **impacket-psexec** realizamos [](PASS THE HASH) con **NLHASH:NTHASH**
+Validamos que tenemos acceso con el **hash** del usuario **Administrator** y **impacket-psexec** realizamos **PASS THE HASH** con **NLHASH:NTHASH**
 ![CME Verify Pass](/assets/post_details/active/active_cme_verify_password.png)
 ![PSEXEC GetSystem](/assets/post_details/active/active_psexec_get_system.png)
