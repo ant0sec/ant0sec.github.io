@@ -14,7 +14,7 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: ant0dev # the main title
+title: ant0sec # the main title
 
 tagline: Software Engineer Student | Content Creator | CTF Player | BugHunter # it will display as the subtitle
 
@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://ant0dev.github.io"
+url: "https://ant0sec.github.io"
 
 github:
   username: ant0dev # change to your GitHub username
@@ -34,12 +34,12 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: ant0dev
+  name: ant0sec
   email: antonioinfantesmar@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     #- https://twitter.com/Antodev # change to your Twitter homepage
-    - https://github.com/ant0dev # change to your GitHub homepage
+    - https://github.com/ant0sec # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
